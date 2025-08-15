@@ -61,12 +61,14 @@ public class codigoPostal {
                     codigosRepeticiones.put(codigos, 1);
                 }
 
-                // Imprime todos los códigos postales y su número de colonias (repeticiones)
-                codigosRepeticiones.forEach((key, value) -> {
-                    System.out.println("Código Postal: " + key + "-> Número de colonias: " + value);
-                });
+                
 
             }
+
+            // Imprime todos los códigos postales y su número de colonias (repeticiones)
+                codigosRepeticiones.forEach((key, value) -> {
+                    System.out.println("Código Postal: " + key + " -> Número de colonias: " + value);
+                });
 
         } catch (Exception e) {
             // Si ocurre un error al leer el archivo, se imprime un mensaje de error
